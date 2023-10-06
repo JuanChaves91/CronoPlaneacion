@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 20px;
+}
+
+h2, h3 {
+  font-size: 20px;
+  margin: 5px;
+}
+
+hr {
+  margin: 20px;
+}
+
+li {
+  /* list-style-position: inside; */
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+
+.espaciar {
+  display:block;
+  margin: 20px 0;
+}
+
+
+.banner {
+  width: 80vw;
+  min-width: 400px;
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.container {
+  margin: 10px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion1 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion1:hover {
+  background-color: #ccc;
+}
+
+.accordion1:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel1 {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
